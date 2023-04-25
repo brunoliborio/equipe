@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: linear-gradient(to right, #f8f7f6, #8f8e8d)
+    }
+    
+    .card {
+        margin-bottom: 20px;
+        border: none;
+    }
+    
+    .box {
+        width: 500px;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #232221;
+        ;
+        text-align: center;
+        transition: 0.25s;
+        margin-top: 100px;
+        border-radius: 10px;
+    }
+    
+    .box input[type="text"],
+    .box input[type="password"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #e2871f;
+        padding: 10px 10px;
+        width: 250px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s
+    }
+    
+    .box h1 {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500
+    }
+    
+    .box input[type="text"]:focus,
+    .box input[type="password"]:focus {
+        width: 300px;
+        border-color: #e2871f
+    }
+    
+    .box input[type="submit"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #e2871f;
+        padding: 14px 40px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+        cursor: pointer
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <form onsubmit="event.preventDefault()" class="box  text-center">
+                        <h1>Emprestar</h1>
+
+                        <input type="text" name="" placeholder="Usuario">
+
+
+                        <div class=" col-12 p-0 m-0  d-flex justify-content-center">
+                            <div class=" p-0 m-0">
+                                <h5 class="text-white">Livros</h5>
+                                <select class="form-control select2 w-100 " tabindex="-1" aria-hidden="true">
+                                <option selected="selected">Harry Potter</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select> </div>
+                        </div>
+                        <div class="col-12">
+                            <form>
+                                <div class=" col-12 row p-0 m-0  d-flex justify-content-center">
+                                    <div class="col-12 my-2 ">
+                                        <h5 class=" text-white">Data Emprestimo</h5>
+                                    </div>
+                                    <div class=" col-12  d-flex justify-content-center">
+                                        <input type="date" id="end" class=" form-control">
+                                    </div>
+                                </div>
+                                <div class=" col-12 row p-0 m-0  d-flex justify-content-center">
+                                    <div class="col-12 my-2">
+                                        <h5 class=" text-white">Data Devolucao</h5>
+                                    </div>
+                                    <div class=" col-12">
+                                        <input type="date" id="end" class="form-control">
+                                    </div>
+
+                                </div>
+                                <input type="submit" name="" value="Emprestar" href="#">
+                            </form>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>

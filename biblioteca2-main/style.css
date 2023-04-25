@@ -1,0 +1,86 @@
+:root {
+    --rad: 0.7rem;
+    --dur: 0.3s;
+    --color-dark: #2f2f2f;
+    --color-light: #fff;
+    --color-brand: #57bd84;
+    --font-fam: 'Lato', sans-serif;
+    --height: 5rem;
+    --btn-width: 6rem;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+form {
+    position: relative;
+    width: 19rem;
+    padding: 0;
+    border-radius: 20px;
+}
+
+input,
+.Button {
+    height: 23px;
+    font-family: var(--font-fam);
+    border: 20px;
+    color: var(--color-dark);
+    font-size: 20px;
+}
+
+input[type="search"] {
+    outline: 0;
+    padding: 0;
+    width: 100%;
+    background: var(--color-light);
+    padding: 0 1.6rem;
+    border-radius: var(--rad);
+    appearance: none;
+    transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+    height: 49px;
+}
+
+.Button {
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 0cap;
+    right: 0;
+    width: var(--btn-width);
+    background-color: #57bd84;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 0 var(--rad) var(--rad) 0;
+}
+
+input:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+}
+
+input:not(:placeholder-shown)+.Button {
+    display: block;
+}
+
+label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
